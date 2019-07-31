@@ -1,25 +1,25 @@
 
 
 # Step 1. Configure all nodes, including Master and Workers:
-     [1.1] create a file called serverlist on master node, put it as /home/ubuntu/serverlist, including the hostname of all other nodes, like following:
+     ## [1.1] create a file called serverlist on master node, put it as /home/ubuntu/serverlist, including the hostname of all other nodes, like following:
 ip-172-30-4-1
 ip-172-30-4-2
 ip-172-30-4-3
-     [1.2] add ip-hostname mapping for all nodes (including master) into master node's /etc/hosts file, like following
+     ## [1.2] add ip-hostname mapping for all nodes (including master) into master node's /etc/hosts file, like following
 172.30.4.1 ip-172-30-4-1
 172.30.4.2 ip-172-30-4-2
 172.30.4.3 ip-172-30-4-3
 172.30.4.4 ip-172-30-4-4
-     [1.3] sync /etc/hosts to all nodes
+     ## [1.3] sync /etc/hosts to all nodes
 ./syncDNS.sh ubuntu ObjectQueryModel/conf/yourPEMFILE.pem serverlist
-     [1.4] sync server list to all nodes
+     ## [1.4] sync server list to all nodes
 ./scpWorkers.sh ubuntu ObjectQueryModel/conf/yourPEMFILE.pem ~/serverlist "serverlist" "/home/ubuntu/"
 
-     [1.5] copy pem file to every node and put it under ObjectQueryModel/conf/
+     ## [1.5] copy pem file to every node and put it under ObjectQueryModel/conf/
 ./scpWorkers.sh ubuntu ObjectQueryModel/conf/yourPEMFILE.pem ~/serverlist "ObjectQueryModel/conf/yourPEMFILE.pem" "/home/ubuntu/ObjectQueryModel/conf/"
-     [1.6] setup password-less ssh by run following on each node:
+     ## [1.6] setup password-less ssh by run following on each node:
 ~/passfree.sh ubuntu ObjectQueryModel/conf/yourPEMFILE.pem serverlist
-     [1.7] configure Spark and Hadoop by change the configurations in ~/hadoop_conf and ~/spark_conf
+     ## [1.7] configure Spark and Hadoop by change the configurations in ~/hadoop_conf and ~/spark_conf
       cp ~/serverlist ~/hadoop_conf/slaves
       cp ~/serverlist ~/spark_conf/slaves
       NOTE: you need change master hostname in those files into your master hostname
