@@ -98,7 +98,13 @@ ip-172-30-4-3
 
 # Step 3. start hadoop and spark by run following on master node
 
-Note: every node needs to install java and have JAVA_HOME specified
+Note1: every node needs to install java and have JAVA_HOME specified
+Note2:
+
+hdfs dfs -mkdir /eventLogs
+hdfs dfs -mkdir /eventLogs/applicationHistory
+hdfs dfs -chown ubuntu:ubuntu /eventLogs
+hdfs dfs -chmod 1770 /event/applicationHistory
 
 ~/sshWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist "sudo apt-get install default-jdk"
 ~/sshWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist "sudo apt-get install default-jre"
