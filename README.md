@@ -24,6 +24,10 @@ and run
 
 source ~/.bashrc
 
+In this manual, we copy all the files/folders in spark-scripts to /home/ubuntu:
+
+cp -R spark-scripts/* /home/ubuntu/
+
 
 # Step 1. Configure all nodes, including Master and Workers:
 
