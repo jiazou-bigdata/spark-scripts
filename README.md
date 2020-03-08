@@ -8,7 +8,7 @@ wget https://downloads.apache.org/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz
 
 tar xvf hadoop-2.7.7.tar.gz
 
-wget https://www.apache.org/dyn/closer.lua/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz
+wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz
 
 tar xvf spark-2.4.5-bin-hadoop2.7.tgz
 
