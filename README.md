@@ -1,4 +1,11 @@
 
+Prerequisite:
+
+Every node needs to have a copy of hadoop or spark package. You can use scpWorkers.sh to copy tarballs of hadoop/spark to all the nodes, and then use sshWorkers.sh to unzip these tarballs.
+
+
+
+
 
 # Step 1. Configure all nodes, including Master and Workers:
 
