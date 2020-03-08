@@ -82,6 +82,12 @@ ip-172-30-4-3
       
       NOTE: you need change master hostname in those files into your master hostname (use command:
       
+      cd ~/conf/spark_conf
+      
+      sed -i 's/$oldHost/$newHost/g' *
+      
+      cd ~/conf/hadoop_conf
+      
       sed -i 's/$oldHost/$newHost/g' *
       
       to simplify the configuration)
