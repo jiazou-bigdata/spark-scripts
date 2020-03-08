@@ -74,15 +74,15 @@ ip-172-30-4-3
 ./sshWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist "tar xvf hadoop-2.7.7.tar.gz; tar xvf spark-2.4.5-bin-hadoop2.7.tgz"
 
 
-[1.8] configure Spark and Hadoop by change the configurations in ~/hadoop_conf and ~/spark_conf
+[1.8] configure Spark and Hadoop by change the configurations in ~/conf/hadoop_conf and ~/conf/spark_conf
 
-      cp ~/serverlist ~/hadoop_conf/slaves
+      cp ~/serverlist ~/conf/hadoop_conf/slaves
       
-      cp ~/serverlist ~/spark_conf/slaves
+      cp ~/serverlist ~/conf/spark_conf/slaves
       
       NOTE: you need change master hostname in those files into your master hostname (use command:
       
-      sed -i 's/ip-172-31-85-114/ip-172-31-1-218/g' *
+      sed -i 's/$oldHost/$newHost/g' *
       
       to simplify the configuration)
 
