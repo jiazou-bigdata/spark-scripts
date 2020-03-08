@@ -28,14 +28,21 @@ source ~/.bashrc
 # Step 1. Configure all nodes, including Master and Workers:
 
 [1.1] create a file called serverlist on master node, put it as /home/ubuntu/serverlist, including the hostname of all other nodes, like following:
+
 ip-172-30-4-1
+
 ip-172-30-4-2
+
 ip-172-30-4-3
 
 [1.2] add ip-hostname mapping for all nodes (including master) into master node's /etc/hosts file, like following
+
 172.30.4.1 ip-172-30-4-1
+
 172.30.4.2 ip-172-30-4-2
+
 172.30.4.3 ip-172-30-4-3
+
 172.30.4.4 ip-172-30-4-4
 
 [1.3] sync /etc/hosts to all nodes
