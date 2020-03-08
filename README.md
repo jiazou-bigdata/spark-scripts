@@ -84,7 +84,7 @@ ip-172-30-4-3
 
 # Step 2. Sync configuration files to each node:
 
-~/syncfiles.sh ubuntu path-to-yourPEMFILE
+~/syncfiles.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist
 
 # Step 3. start hadoop and spark by run following on master node
 
