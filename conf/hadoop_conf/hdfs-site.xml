@@ -19,7 +19,7 @@
 <configuration>
     <property>
             <name>dfs.namenode.secondary.http-address</name>
-            <value>ip-172-31-85-114:9001</value>
+            <value>ip-172-31-45-213:9001</value>
     </property>
     <property>
             <name>dfs.replication</name>

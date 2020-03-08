@@ -19,7 +19,7 @@
 <configuration>
     <property>
                 <name>fs.defaultFS</name>ji
-                <value>hdfs://ip-172-31-85-114:9000</value>
+                <value>hdfs://ip-172-31-45-213:9000</value>
     </property>
     <property>
              <name>hadoop.tmp.dir</name>

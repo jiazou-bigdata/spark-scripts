@@ -56,7 +56,7 @@ HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hdoop
 # - SPARK_DAEMON_JAVA_OPTS, to set config properties for all daemons (e.g. "-Dx=y")
 # - SPARK_DAEMON_CLASSPATH, to set the classpath for all daemons
 # - SPARK_PUBLIC_DNS, to set the public dns name of the master or workers
-SPARK_MASTER_HOST=ip-172-31-85-114
+SPARK_MASTER_HOST=ip-172-31-45-213
 SPARK_LOCAL_DIRS=/home/ubuntu/spark
 SPAKR_WORKER_CORES=8
 SPARK_WORKER_DIR=/home/ubuntu/spark/work

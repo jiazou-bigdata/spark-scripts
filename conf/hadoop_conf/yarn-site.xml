@@ -24,22 +24,22 @@
 <!-- Site specific YARN configuration properties -->
     <property>
             <name>yarn.resourcemanager.hostname</name>
-            <value>ip-172-31-85-114</value>
+            <value>ip-172-31-45-213</value>
     </property> 
       <property>
                <name>yarn.resourcemanager.scheduler.address</name>
-               <value>ip-172-31-85-114:8030</value>
+               <value>ip-172-31-45-213:8030</value>
        </property>
        <property>
             <name>yarn.resourcemanager.resource-tracker.address</name>
-             <value>ip-172-31-85-114:8031</value>
+             <value>ip-172-31-45-213:8031</value>
       </property>
       <property>
               <name>yarn.resourcemanager.admin.address</name>
-               <value>ip-172-31-85-114:8033</value>
+               <value>ip-172-31-45-213:8033</value>
        </property>
        <property>
                <name>yarn.resourcemanager.webapp.address</name>
-               <value>ip-172-31-85-114:8088</value>
+               <value>ip-172-31-45-213:8088</value>
        </property>
 </configuration>
