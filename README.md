@@ -76,7 +76,11 @@ ip-172-30-4-3
       
       cp ~/serverlist ~/spark_conf/slaves
       
-      NOTE: you need change master hostname in those files into your master hostname
+      NOTE: you need change master hostname in those files into your master hostname (use command:
+      
+      sed -i 's/ip-172-31-85-114/ip-172-31-1-218/g' *
+      
+      to simplify the configuration)
 
 # Step 2. Sync configuration files to each node:
 
