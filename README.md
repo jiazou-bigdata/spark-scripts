@@ -88,6 +88,8 @@ ip-172-30-4-3
 
 # Step 3. start hadoop and spark by run following on master node
 
+Note: every node needs to install java and have JAVA_HOME specified
+
 ~/startAll.sh
 
 If you want to stop the system without removing data from HDFS and restart then you can use ~/softStop.sh and ~/restartAfterSoftStop.sh
