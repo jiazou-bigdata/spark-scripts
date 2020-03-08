@@ -100,6 +100,9 @@ ip-172-30-4-3
 
 Note: every node needs to install java and have JAVA_HOME specified
 
+~/sshWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist "sudo apt-get install default-jdk"
+~/sshWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist "sudo apt-get install default-jre"
+
 ~/startAll.sh
 
 If you want to stop the system without removing data from HDFS and restart then you can use ~/softStop.sh and ~/restartAfterSoftStop.sh
