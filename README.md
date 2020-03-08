@@ -108,6 +108,9 @@ Note2: ~/initSparkHistoryServer.sh
 
 If you want to stop the system without removing data from HDFS and restart then you can use ~/softStop.sh and ~/restartAfterSoftStop.sh
 
+Or you can hard stop the system and remove all folders:
+./stopAll.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist 
+
 # Update set up a Ganglia cluster:
 
 On each worker node, edit the /etc/ganglia/gmond.conf file:
