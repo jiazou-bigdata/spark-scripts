@@ -56,10 +56,12 @@ ip-172-30-4-3
 [1.4] sync server list to all nodes
 
 ./scpWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist $path-to-serverlist $path-to-serverlist-on-worker
+e.g. ./scpWorkers.sh ubuntu sigmod2020.pem serverlist serverlist /home/ubuntu
 
 [1.5] copy pem file to every node and put it under $path-to-yourPEMFILE-on-worker
 
 ./scpWorkers.sh ubuntu $path-to-yourPEMFILE $path-to-serverlist $path-to-yourPEMFILE $path-to-yourPEMFILE-on-worker
+e.g. ./scpWorkers.sh ubuntu sigmod2020.pem serverlist sigmod2020.pem /home/ubuntu
 
 [1.6] setup password-less ssh by run following on each node:
 
